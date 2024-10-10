@@ -3,7 +3,7 @@ from typing import Any, Optional, Sequence
 """Duck typing - first element of a sequence"""
 
 
-def safe_first_element(lst: Sequence[Any]) -> Optional[Any]:
+def safe_first_element(lst: Sequence[Any]) -> Optional[Any, None]:
   """Augment the following code with the correct duck-typed annotations:"""
   if lst:
     return lst[0]
