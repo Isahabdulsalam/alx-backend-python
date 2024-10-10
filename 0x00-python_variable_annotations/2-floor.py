@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import math
-""" a type-annotated function floor which takes a float n as argument """
+"""a type-annotated function that take float n as arg. """
 
 
 def floor(n: float) -> int:
