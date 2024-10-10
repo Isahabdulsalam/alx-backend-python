@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
 
-from typing import TypeVar, Dict, Optional
+from typing import Any, Mapping, Optional, Union
 
-# Define a TypeVar for the key and value types
-K = TypeVar('K') # Type for the dictionary key
-V = TypeVar('V') # Type for the dictionary value
-
-def safely_get_value(dct: Dict[K, V], key: K, default: Optional[V] = None) -> Optional[V]:
+def safely_get_value(dct: Mapping, key: Any, default: Union[Any, None] = None) -> Union[Any, None]:
   """
   Safely retrieves the value from a dictionary for a given key.
   Returns the default value if the key is not found.
